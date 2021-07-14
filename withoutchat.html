@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <title>TELKOM INDONESIA</title>
   <meta content="" name="description">
@@ -13,6 +15,9 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css" crossorigin="anonymous">
+  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -611,6 +616,42 @@
 
       </div>
     </section><!-- End Contact Section -->
+	<!--
+Inspired by https://dribbble.com/supahfunk
+-->
+<section class="avenue-messenger">
+  <div class="menu">
+   <div class="items"><span>
+     <a href="#" title="Minimize">&mdash;</a><br>
+<!--     
+     <a href="">enter email</a><br>
+     <a href="">email transcript</a><br>-->
+     <a href="#" title="End Chat">&#10005;</a>
+     
+     </span></div>
+    <div class="button">...</div>
+  </div>
+  <div class="agent-face">
+    <div class="half">
+     <img class="agent circle" src="http://askavenue.com/img/17.jpg" alt="Jesse Tino"></div>
+  </div>
+<div class="chat">
+  <div class="chat-title">
+    <h1>Jesse Tino</h1>
+    <h2>RE/MAX</h2>
+  <!--  <figure class="avatar">
+      <img src="http://askavenue.com/img/17.jpg" /></figure>-->
+  </div>
+  <div class="messages">
+    <div class="messages-content"></div>
+  </div>
+  <div class="message-box">
+    <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+    <button type="submit" class="message-submit">Send</button>
+  </div>
+</div>
+  </div>
+<!--<div class="bg"></div>-->
 
   </main><!-- End #main -->
 
@@ -659,6 +700,7 @@
         
       </div>
     </div>
+
   </footer><!-- End Footer -->
   
 
@@ -674,6 +716,17 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script>
+  $('.chat-input input').keyup(function(e) {
+	if ($(this).val() == '')
+		$(this).removeAttr('good');
+	else
+		$(this).attr('good', '');
+});
+
+  </script>
 
 </body>
 
