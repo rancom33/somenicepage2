@@ -109,15 +109,23 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+.mutepls {
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  left: 15px;
+}
+
 </style>
 </head>
 <body>
 
   
-<p></p><p></p><p></p>
-  <br>
+
 <br>
-<audio controls autoplay>
+<br>
+<audio class="mutepls" controls autoplay loop="true">
   <source src="rickroll.mp3" type="audio/mpeg" autoplay="true">
 </audio>
 
@@ -782,7 +790,13 @@ function closeForm() {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  $('.speaker').click(function(e) {
+  e.preventDefault();
 
+	$(this).toggleClass('mute');
+});
+  </script>
 </body>
 
 </html>
