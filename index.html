@@ -115,6 +115,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   position: fixed;
   bottom: 23px;
   left: 15px;
+  cursor:pointer;
 }
 
 </style>
@@ -122,15 +123,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <body>
 
   
+<h2>
+<div class="mutepls" onclick="togglePlay()">🔊</div>
+</h2>
 
-<br>
-<br>
-<audio class="mutepls" controls preload="auto" autoplay loop>
-  <source src="rickroll.mp3" type="audio/mpeg">
-</audio>
+<div class="player">
+		<audio class="audio" src="rickroll.mp3" autoplay type="audio" loop=""></audio>
+	</div>
 
 <button class="open-button" onclick="openForm()">Chat</button>
-
 <div class="chat-popup" id="myForm">
   <form class="form-container">
     <h1>Chat</h1>
@@ -151,6 +152,21 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+var mutepls = document.querySelector(".mutepls");
+var audio = document.querySelector(".audio");
+
+function togglePlay() {
+	if (audio.paused) {
+		audio.play();
+		mutepls.innerHTML = "🔊";
+	} else {
+		audio.pause();
+		mutepls.innerHTML = "🔇";
+		mutepls.style.color = " #848484";
+	}
+}
+
 </script>
 
 </body>
