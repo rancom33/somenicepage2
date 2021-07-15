@@ -39,6 +39,10 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
+.behindbet {
+  z-index:-999999999999;
+}
+
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: #555;
@@ -59,6 +63,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   margin-right: auto;
   width: 50%;
 }
+
+
 
 /* The popup chat - hidden by default */
 .chat-popup {
@@ -177,10 +183,10 @@ function togglePlay() {
 
 </body>
 <body>
-<div id="ex1">
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div id="ex1" class="container d-flex align-items-center justify-content-between">
 
       <h1 ><a img href="index.html"><img src="assets/img/logoputih.png" height="35%" width="35%"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -188,11 +194,11 @@ function togglePlay() {
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#ex1">Home</a></li>
 		  <li></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#jobvacancies">Job Vacancies</a></li>
-          <li><a class="nav-link scrollto " href="#FAQ">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#ex2">About</a></li>
+          <li><a class="nav-link scrollto" href="#ex3">Job Vacancies</a></li>
+          <li><a class="nav-link scrollto " href="#ex5">FAQ</a></li>
           <li><a class="getstarted scrollto" href="#about">SIGN UP/CREATE ACCOUNT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -202,22 +208,9 @@ function togglePlay() {
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="ex2" id="hero"class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Are you ready to Digitalize Indonesia?</h1>
-          <h2>"PT Telkom Indonesia(Persero)Tbk is a state-owned information and communications technology enterprise and telecomumnications network in Indonesia. To be the most preferred digital telco to empower society is out vision"</h2>
-          <div class="navbar">
-            <a href="#join us" class="btn-join-us scrollto">Join Us</a>
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
+  <section id="ex1" id="hero"class="d-flex align-items-center">
+	<img src="assets/img/tlt2.jpg" class="behindbet" width="100%" height="100%">
+    
 
   </section><!-- End Hero -->
 
@@ -235,18 +228,18 @@ function togglePlay() {
 
         <div class="row">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/digital connectivity.jpg" class="img-fluid" alt="">
+            <img src="assets/img/digital connectivity.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-			  <a href="assets/img/digital connectivity.jpg" data-gallery="portfolioGallery" title="Digital Connectivy"><br></a>
+			  <a href="assets/img/digital connectivity.png" data-gallery="portfolioGallery" title="Digital Connectivy"><br></a>
               <h4 class="title"><a href="">Digital Connectivity</a></h4>
               <p class="description">We provide Fiber to the x (FTTX), 5G, Software Define Networking (SDN)/Networking Function Virtualization (NFV)/Satellite</p>
 			  <p class="description"> See more...</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/digital platform.jpg" class="img-fluid" alt="">
+            <img src="assets/img/digitalplatform.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-			  <a href="assets/img/digital platform.jpg" data-gallery="portfolioGallery" title="Digital Platform"></i><br></a>
+			  <a href="assets/img/digital platform.png" data-gallery="portfolioGallery" title="Digital Platform"></i><br></a>
               <h4 class="title"><a href="">Digital Platform</a></h4>
               <p class="description">We provide Data Center, Cloud Internet of Things (IoT), BigData/Artificial Intelligence (AI), Cyber Security</p>
 			  <p class="description">See more...</p>
@@ -254,13 +247,13 @@ function togglePlay() {
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
 			<style>
-			img {
+			imgrad {
 			  border-radius: 5%;
 			}
 			</style>
-            <img src="assets/img/digital services.jpg" class="img-fluid" alt="">
+            <img src="assets/img/digitalservice.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-			  <a href="assets/img/digital services.jpg" data-gallery="portfolioGallery" title="Digital services"></i><br></a>
+			  <a href="assets/img/digitalservice.png" data-gallery="portfolioGallery" title="Digital services"></i><br></a>
               <h4 class="title"><a href="">Digital Services</a></h4>
               <p class="description">We provide digital services to Enterprise and Consumers</p>
 			  <p class="description">See more...</p>
@@ -268,16 +261,15 @@ function togglePlay() {
           </div>
         </div>
 
-      </div>
     </section><!-- End Featured Services Section -->
 
     <!-- ======= About Section ======= -->
-    <section id="ex3" id="about" class="about">
+    <section id="ex2" id="about" class="about">
       <div class="container">
 
         <div class="row">
           <div class="col-lg-6">
-            <img src="assets/img/virtual tour.jpg" class="img-fluid animated" height="100%" width="90%" alt="">
+            <img src="assets/img/virtual tour.png" class="img-fluid animated" height="100%" width="90%" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
             <h3>VIRTUAL TOUR 360°</h3>
@@ -291,13 +283,13 @@ function togglePlay() {
     </section><!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section id="ex4" id="counts" class="counts">
+    <section id="counts" class="counts">
       <div class="container">
           <h2 align="center">Our Offices Arround the World</h2>
 	  </div>
 		
           <div align="center">
-            <img src="assets/img/around the world.png" height="65%" width="65%" border="2">
+            <img src="assets/img/around the world.png" height="65%" width="65%">
           </div>
 	  
 	  <div class="container">
@@ -330,7 +322,7 @@ function togglePlay() {
     </section><!-- End Counts Section -->
 
     <!-- ======= RONNY START Job Vacancies Section ======= -->
-    <section id="ex5" id="jobvacancies" class="services section-bg">
+    <section id="ex3" id="jobvacancies" class="services section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -345,31 +337,22 @@ function togglePlay() {
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div>
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"></div>
+              <h3>Great People Trainee Program</h3>
+			  <img src="assets/img/gptp.png" class="img-fluid animated" height="100%" width="90%" alt="">
+              <h4>Great People Trainee Program (GPTP) Batch XIV</h4>
+			  <p>As it takes two to tango, this journey needs you to join and contribute based on your passion. Here at Telkom Indonesia, every contribution is counted, no matter what. Join us today to build a digital nation together!</p>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+		  </div>
+		  <div class="row">
+		<div class="icon-box">
+		<h3>Pro Hire Telkom Indonesia</h3>
+		<div class="container">
+		<div class="row">
+		<div class="col-sm">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4><a href="">Nemo Enim</a></h4>
@@ -377,7 +360,7 @@ function togglePlay() {
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-sm">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
               <h4><a href="">Dele cardo</a></h4>
@@ -385,19 +368,78 @@ function togglePlay() {
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-sm">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-arch"></i></div>
               <h4><a href="">Divera don</a></h4>
               <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
             </div>
           </div>
-
-        </div>
+		  </div>
+		</div>
 
       </div>
     </section><!-- End Job Vacancies Section RONNY END -->
+	
+	<section id="ex4" id="jobvacancies" class="services section-bg">
+      <div class="container">
 
+        <div class="section-title">
+          <span>     </span>
+          <h2>Still feeling unsure about your choice?</h2>
+          <h3>Let's find more about youreself! Are you a...</h3>
+		  
+        </div>
+
+      
+		  
+		<div class="icon-box">
+
+		<div class="container">
+		<div class="row">
+		<div class="col-sm">
+            <div class="icon-box">
+              <div><img src="assets/img/freshgrad.png" class="img-fluid animated" height="100%" width="90%" alt=""></div>
+              <h4><a href="">Fresh Graduates?</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+
+          <div class="col-sm">
+            <div class="icon-box">
+              <div><img src="assets/img/experienced.png" class="img-fluid animated" height="100%" width="90%" alt=""></div>
+              <h4><a href="">Experienced?</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+		  </div>
+		</div>
+
+    </section><!-- End Job Vacancies Section RONNY END -->
+	
+	 <!-- ======= About Section ======= -->
+    <section id="ex5" id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/youtube.png" class="img-fluid animated" height="100%" width="90%" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Recruitment Process</h3>
+            <p class="fst-bold">
+              Start your journey to learn, grow, and contribute to Digitalize Indonesia now!
+			  <img src="assets/img/rekrut.png" class="img-fluid animated" height="100%" width="90%" alt="">
+            </p>
+
+			
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+	
     <!-- ======= FAQ Section ======= >
     <section id="ex2" id="FAQ" class="FAQ">
       <div class="container">
@@ -536,7 +578,7 @@ function togglePlay() {
                   Alhamdulillah, Thank God I’m @livingintelkom, fasilitas dan protokol kesehatan Telkom mendukungku bekerja dengan nyaman. Telkom juga memberikan banyak kebijakan salah satunya Flexible Working Arrangement, kita bisa bekerja dari rumah.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-111.png" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials-111.png" class="testimonial-img" alt="">
                 <h3>Zahra Rizky Dwita Arissa</h3>
                 <h4>Performance Officer</h4>
               </div>
@@ -549,7 +591,7 @@ function togglePlay() {
                   Thank God I’m LivinginTelkom, policy di Telkom benar-benar mendukung bekerja, mulai dari Flexible Working Arrangement sampai kelengkapan APD seperti hand sanitizer, masker, vitamin yang selalu tersedia dan di update berkala. Bahkan rekan-rekan mitra juga disediakan dari Telkom. Keren kan?
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-222.png" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials-222.png" class="testimonial-img" alt="">
                 <h3>Frondy Fernanda Ferdianto</h3>
                 <h4>Operation & Maintenance</h4>
               </div>
@@ -562,7 +604,7 @@ function togglePlay() {
                   Thank God I'm @livingintelkom, Kantorku menerapkan FWA (Flexible Working Arrangement) sehingga tetap bisa bekerja dengan aman walau dari rumah. Bersyukur banget, fasilitas yang disediakan juga sangat lengkap, misalnya stok hand-sanitizer, vitamin, dan masker yang selalu siap sedia jadi tidak ada alasan bagi karyawan Telkom untuk tidak mematuhi protokol.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-333.png" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials-333.png" class="testimonial-img" alt="">
                 <h3>Belinda Ramadhanty Harun</h3>
                 <h4>Offering Officer</h4>
               </div>
@@ -575,7 +617,7 @@ function togglePlay() {
                   Sebuah tanggung jawab yang besar bagi saya untuk memimpin suatu Unit terkecil di Telkom, padahal saat itu usia saya tergolong masih muda. Selama 2 tahun sampai saat ini, saya sangat beruntung diberi amanah ke 3 Unit bisnis yang berbeda yaitu Sentra Telepon Otomat (STO) Hegarmanah, Ujungberung, dan Tegalega. Dari perjalanan 2 tahun ini, saya mendapat penghargaan The Best 1 KaUbis Regional 3 pada Forum Nasional Operational Direction For KaUbis.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-444.png" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials-444.png" class="testimonial-img" alt="">
                 <h3>Dory Fermando</h3>
                 <h4>Fullfillment & Assurance</h4>
               </div>
@@ -588,7 +630,7 @@ function togglePlay() {
                   Alhamdulillah, Thank God I’m @livingintelkom, fasilitas dan protokol kesehatan Telkom mendukungku bekerja dengan nyaman. Telkom juga memberikan banyak kebijakan salah satunya Flexible Working Arrangement, kita bisa bekerja dari
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-555.png" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials-555.png" class="testimonial-img" alt="">
                 <h3>Rahmi Relawati</h3>
                 <h4>Sales & Customer Care</h4>
               </div>
@@ -601,7 +643,7 @@ function togglePlay() {
       </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Cta Section ======= -->
+    <!-- ======= Cta Section ======= 
     <section id="cta" class="cta">
       <div class="container">
 
@@ -612,19 +654,68 @@ function togglePlay() {
         </div>
 
       </div>
-    </section><!-- End Cta Section -->
+    </section><-> End Cta Section -->
 
+
+	<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>eNno</h3>
+            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/enno-free-simple-bootstrap-template/ -->
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+	
+	
     <!-- ======= Team Section ======= -->
-    <section id="ex2" id="team" class="team section-bg">
+    <section id="team" class="team section-bg">
       <div class="container">
 
         <div class="section-title">
-          <span>Team</span>
-          <h2>Team</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+         
+          <h2>Meet the Team</h2>
+          <!--<p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>-->
         </div>
-
-        <div class="row">
+		<img src="assets/img/theteam.png">
+        <!--div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="assets/img/team/team-1.jpg" alt="">
@@ -676,7 +767,7 @@ function togglePlay() {
             </div>
           </div>
 
-        </div>
+        </div-->
 
       </div>
     </section><!-- End Team Section -->
@@ -754,57 +845,12 @@ function togglePlay() {
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-
-      <div class="container">
-
-        <div class="row  justify-content-center">
-          <div class="col-lg-6">
-            <h3>eNno</h3>
-            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-          </div>
-        </div>
-
-        <div class="row footer-newsletter justify-content-center">
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>eNno</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/enno-free-simple-bootstrap-template/ -->
-        
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+  
   <style type="text/css">
 		h1 {
 			text-align: center;
 		}
-		h2
+		
 
 		#ex1 {
 
@@ -814,10 +860,11 @@ function togglePlay() {
 			background-position: right;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-			background-size: 250px 250px;
+			background-size: 250px 300px;			
 			z-index: 99999999999999999999999999999999999;
 			img-fluid animated;
 		}
+		
 		#ex2 {
 
 			text-align: right;
@@ -826,7 +873,7 @@ function togglePlay() {
 			background-position: right;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-			background-size: 250px 250px;
+			background-size: 250px 300px;
 			z-index: 99999999999999999999999999999999999;
 			img-fluid animated;
 		}
@@ -864,7 +911,7 @@ function togglePlay() {
 			background-position: right;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-			background-size: 250px 250px;
+			background-size: 250px 325px;
 			z-index: 99999999999999999999999999999999999;
 			img-fluid animated;
 		}
